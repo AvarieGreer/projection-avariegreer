@@ -1,0 +1,399 @@
+/* Add font files for Mountains of Christmas */
+@font-face {
+  font-family: 'Mountains of Christmas';
+  src: url('fonts/mountains-of-christmas.woff2') format('woff2'),
+       url('fonts/mountains-of-christmas.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Instrument Serif */
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('fonts/instrument-serif.woff2') format('woff2'),
+       url('fonts/instrument-serif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Kranky */
+@font-face {
+  font-family: 'Kranky';
+  src: url('fonts/kranky.woff2') format('woff2'),
+       url('fonts/kranky.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Kyiv*Type Serif */
+@font-face {
+  font-family: 'Kyiv*Type Serif';
+  src: url('fonts/kyiv-type-serif.woff2') format('woff2'),
+       url('fonts/kyiv-type-serif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Oleo Script */
+@font-face {
+  font-family: 'Oleo Script';
+  src: url('fonts/oleo-script.woff2') format('woff2'),
+       url('fonts/oleo-script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for RU Serius */
+@font-face {
+  font-family: 'RU Serius';
+  src: url('fonts/ru-serius.woff2') format('woff2'),
+       url('fonts/ru-serius.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Shrikhand */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('fonts/shrikhand.woff2') format('woff2'),
+       url('fonts/shrikhand.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Tapestry */
+@font-face {
+  font-family: 'Tapestry';
+  src: url('fonts/tapestry.woff2') format('woff2'),
+       url('fonts/tapestry.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family-mountains-of-christmas: 'Mountains of Christmas', sans-serif;
+  --font-family-instrument-serif: 'Instrument Serif', sans-serif;
+  --font-family-kranky: 'Kranky', sans-serif;
+  --font-family-kyiv-type-serif: 'Kyiv*Type Serif', sans-serif;
+  --font-family-oleo-script: 'Oleo Script', sans-serif;
+  --font-family-ru-serius: 'RU Serius', sans-serif;
+  --font-family-shrikhand: 'Shrikhand', sans-serif;
+  --font-family-tapestry: 'Tapestry', sans-serif;
+  --text-rgb-212-33-55: rgba(212, 33, 55, 1);
+  --text-rgb-14-71-53: rgba(14, 71, 53, 1);
+  --text-rgb-147-207-195: rgba(147, 207, 195, 1);
+  --text-rgb-241-142-163: rgba(241, 142, 163, 1);
+  --text-white: rgba(255, 255, 255, 1);
+}
+
+.text-rgb-212-33-55 {
+  color: var(--text-rgb-212-33-55);
+}
+
+.text-rgb-14-71-53 {
+  color: var(--text-rgb-14-71-53);
+}
+
+.text-rgb-147-207-195 {
+  color: var(--text-rgb-147-207-195);
+}
+
+.text-rgb-241-142-163 {
+  color: var(--text-rgb-241-142-163);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prototype Links */
+a.prototype-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+.rectangle-11-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(79, 152, 127, 1);
+}
+
+.rectangle-15-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(147, 207, 195, 1);
+}
+
+.text-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-mountains-of-christmas);
+  font-weight: normal;
+  font-size: 73px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-212-33-55);
+}
+
+.rectangle-16-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(147, 207, 195, 1);
+}
+
+.text-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-mountains-of-christmas);
+  font-weight: normal;
+  font-size: 73px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-212-33-55);
+}
+
+.text-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-mountains-of-christmas);
+  font-weight: normal;
+  font-size: 73px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-212-33-55);
+}
+
+.text-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-mountains-of-christmas);
+  font-weight: normal;
+  font-size: 73px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-212-33-55);
+}
+
+.text-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-instrument-serif);
+  font-weight: normal;
+  font-size: 229px;
+  line-height: 97px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-14-71-53);
+  font-family: var(--font-family-instrument-serif);
+  font-weight: normal;
+  font-size: 137px;
+  line-height: 97px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-14-71-53);
+}
+
+.text-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-kranky);
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 97px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-147-207-195);
+}
+
+.text-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-kyiv-type-serif);
+  font-weight: normal;
+  font-size: 112px;
+  line-height: 97px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-241-142-163);
+}
+
+.text-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-mountains-of-christmas);
+  font-weight: normal;
+  font-size: 73px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-212-33-55);
+  font-family: var(--font-family-mountains-of-christmas);
+  font-weight: normal;
+  font-size: 112px;
+  line-height: 109px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-212-33-55);
+}
+
+.text-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-oleo-script);
+  font-weight: normal;
+  font-size: 89px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-14-71-53);
+}
+
+.text-14 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-ru-serius);
+  font-weight: normal;
+  font-size: 292px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.text-15 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-shrikhand);
+  font-weight: normal;
+  font-size: 73px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-147-207-195);
+}
+
+.text-16 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-tapestry);
+  font-weight: normal;
+  font-size: 90px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-241-142-163);
+}
+
+.text-17 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-tapestry);
+  font-weight: normal;
+  font-size: 90px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-241-142-163);
+}
+
+.text-18 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-tapestry);
+  font-weight: normal;
+  font-size: 90px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-241-142-163);
+}
+
+.text-19 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-tapestry);
+  font-weight: normal;
+  font-size: 90px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-241-142-163);
+}
+
+.text-20 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-tapestry);
+  font-weight: normal;
+  font-size: 212px;
+  line-height: 132px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-241-142-163);
+}
+
+.type-1 {
+@media (max-width: 1440px) {
+  .type-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .type-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
