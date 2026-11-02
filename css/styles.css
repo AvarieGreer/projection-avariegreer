@@ -1,399 +1,279 @@
-/* Add font files for Mountains of Christmas */
-@font-face {
-  font-family: 'Mountains of Christmas';
-  src: url('fonts/mountains-of-christmas.woff2') format('woff2'),
-       url('fonts/mountains-of-christmas.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
-/* Add font files for Instrument Serif */
-@font-face {
-  font-family: 'Instrument Serif';
-  src: url('fonts/instrument-serif.woff2') format('woff2'),
-       url('fonts/instrument-serif.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700;6..96,900&family=Playfair+Display:ital,wght@0,700;1,700;1,900&family=Rye&family=Special+Elite&display=swap');
 
-/* Add font files for Kranky */
-@font-face {
-  font-family: 'Kranky';
-  src: url('fonts/kranky.woff2') format('woff2'),
-       url('fonts/kranky.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Add font files for Kyiv*Type Serif */
-@font-face {
-  font-family: 'Kyiv*Type Serif';
-  src: url('fonts/kyiv-type-serif.woff2') format('woff2'),
-       url('fonts/kyiv-type-serif.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Add font files for Oleo Script */
-@font-face {
-  font-family: 'Oleo Script';
-  src: url('fonts/oleo-script.woff2') format('woff2'),
-       url('fonts/oleo-script.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Add font files for RU Serius */
-@font-face {
-  font-family: 'RU Serius';
-  src: url('fonts/ru-serius.woff2') format('woff2'),
-       url('fonts/ru-serius.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Add font files for Shrikhand */
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('fonts/shrikhand.woff2') format('woff2'),
-       url('fonts/shrikhand.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Add font files for Tapestry */
-@font-face {
-  font-family: 'Tapestry';
-  src: url('fonts/tapestry.woff2') format('woff2'),
-       url('fonts/tapestry.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-:root {
-  --font-family-mountains-of-christmas: 'Mountains of Christmas', sans-serif;
-  --font-family-instrument-serif: 'Instrument Serif', sans-serif;
-  --font-family-kranky: 'Kranky', sans-serif;
-  --font-family-kyiv-type-serif: 'Kyiv*Type Serif', sans-serif;
-  --font-family-oleo-script: 'Oleo Script', sans-serif;
-  --font-family-ru-serius: 'RU Serius', sans-serif;
-  --font-family-shrikhand: 'Shrikhand', sans-serif;
-  --font-family-tapestry: 'Tapestry', sans-serif;
-  --text-rgb-212-33-55: rgba(212, 33, 55, 1);
-  --text-rgb-14-71-53: rgba(14, 71, 53, 1);
-  --text-rgb-147-207-195: rgba(147, 207, 195, 1);
-  --text-rgb-241-142-163: rgba(241, 142, 163, 1);
-  --text-white: rgba(255, 255, 255, 1);
-}
-
-.text-rgb-212-33-55 {
-  color: var(--text-rgb-212-33-55);
-}
-
-.text-rgb-14-71-53 {
-  color: var(--text-rgb-14-71-53);
-}
-
-.text-rgb-147-207-195 {
-  color: var(--text-rgb-147-207-195);
-}
-
-.text-rgb-241-142-163 {
-  color: var(--text-rgb-241-142-163);
-}
-
-.text-white {
-  color: var(--text-white);
-}
-
-/* CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.poster {
+    width: min(100%, 914px);
+    aspect-ratio: 944 / 1132;
+    border: 4px solid #009eff;
+    background-color: #51977f;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-/* Prototype Links */
-a.prototype-link {
-  text-decoration: none;
-  color: inherit;
-  display: contents;
+/* HEADER */
+
+.poster-header {
+    height: 10.5%;
+    background-color: #91cbbf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+    flex-shrink: 0;
 }
 
-.rectangle-11-2 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(79, 152, 127, 1);
+.poster-header h1 {
+    color: #ed1745;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: clamp(15px, 4.5vw, 45px);
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
 }
 
-.rectangle-15-3 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(147, 207, 195, 1);
+.dots {
+    flex: 1;
+    border-top: 6px dotted #ed1745;
 }
 
-.text-4 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-mountains-of-christmas);
-  font-weight: normal;
-  font-size: 73px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-212-33-55);
+/* MAIN POSTER */
+
+.poster-content {
+    height: 79%;
+    position: relative;
+    background-color: #51977f;
+    overflow: hidden;
+    flex: 1;
 }
 
-.rectangle-16-5 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(147, 207, 195, 1);
+/* VERTICAL TITLE */
+
+.vertical-title {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 18%;
+    height: 37%;
+    color: #064e3b;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 900;
+    font-size: clamp(17px, 5.5vw, 67px);
+    line-height: .85;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    letter-spacing: -5px;
 }
 
-.text-6 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-mountains-of-christmas);
-  font-weight: normal;
-  font-size: 73px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-212-33-55);
+/* HOHO PATTERN */
+
+.hoho-pattern {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+    width: 72%;
+    color: #a1d6ca;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    font-size: clamp(15px, 5.3vw, 62px);
+    line-height: 1.05;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.text-7 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-mountains-of-christmas);
-  font-weight: normal;
-  font-size: 73px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-212-33-55);
+.hoho-pattern p {
+    letter-spacing: -3px;
+    transform: scaleY(1.1);
+    transform-origin: left;
 }
 
-.text-8 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-mountains-of-christmas);
-  font-weight: normal;
-  font-size: 73px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-212-33-55);
+/* HAPPY HOLIDAYS */
+
+.happy-holidays {
+    position: absolute;
+    top: 44%;
+    left: 25%;
+    color: #f28ba8;
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(22px, 7.2vw, 75px);
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: -3px;
 }
 
-.text-9 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-instrument-serif);
-  font-weight: normal;
-  font-size: 229px;
-  line-height: 97px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--text-rgb-14-71-53);
-  font-family: var(--font-family-instrument-serif);
-  font-weight: normal;
-  font-size: 137px;
-  line-height: 97px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--text-rgb-14-71-53);
+/* HOLLY JOLLY */
+
+.holly {
+    position: absolute;
+    top: 52%;
+    left: 3%;
+    width: 34%;
+    color: #ed1745;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: clamp(18px, 4.4vw, 43px);
+    line-height: 1.05;
 }
 
-.text-10 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-kranky);
-  font-weight: normal;
-  font-size: 100px;
-  line-height: 97px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--text-rgb-147-207-195);
+.holly span {
+    display: block;
+    font-size: 1.4em;
 }
 
-.text-11 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-kyiv-type-serif);
-  font-weight: normal;
-  font-size: 112px;
-  line-height: 97px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--text-rgb-241-142-163);
+/* MERRY AND BRIGHT */
+
+.merry {
+    position: absolute;
+    top: 53%;
+    left: 38%;
+    color: #064e3b;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(17px, 5.2vw, 52px);
+    font-weight: 900;
+    white-space: nowrap;
 }
 
-.text-12 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-mountains-of-christmas);
-  font-weight: normal;
-  font-size: 73px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-212-33-55);
-  font-family: var(--font-family-mountains-of-christmas);
-  font-weight: normal;
-  font-size: 112px;
-  line-height: 109px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-212-33-55);
+.merry small {
+    font-size: .65em;
 }
 
-.text-13 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-oleo-script);
-  font-weight: normal;
-  font-size: 89px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-14-71-53);
+/* TWAS THE NIGHT BEFORE */
+
+.night {
+    position: absolute;
+    top: 63%;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #f28ba8;
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(17px, 5.5vw, 53px);
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
-.text-14 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-ru-serius);
-  font-weight: normal;
-  font-size: 292px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-white);
+.night span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: .9em;
 }
 
-.text-15 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-shrikhand);
-  font-weight: normal;
-  font-size: 73px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-147-207-195);
+/* CHRISTMAS */
+
+.christmas {
+    position: absolute;
+    top: 62%;
+    left: 39%;
+    width: 57%;
+    color: #f28ba8;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: clamp(40px, 12vw, 112px);
+    line-height: .73;
+    letter-spacing: -7px;
 }
 
-.text-16 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-tapestry);
-  font-weight: normal;
-  font-size: 90px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-241-142-163);
+.christmas span {
+    display: block;
 }
 
-.text-17 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-tapestry);
-  font-weight: normal;
-  font-size: 90px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-241-142-163);
+/* OH WHAT FUN */
+
+.vertical-fun {
+    position: absolute;
+    right: 3%;
+    top: 57%;
+    color: #a1d6ca;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(17px, 4.5vw, 42px);
+    font-weight: 900;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
-.text-18 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-tapestry);
-  font-weight: normal;
-  font-size: 90px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-241-142-163);
+/* DECK THE HALLS */
+
+.deck {
+    position: absolute;
+    left: 3%;
+    bottom: 2%;
+    width: 94%;
+    color: white;
+    font-family: 'Rye', serif;
+    font-size: clamp(28px, 10.5vw, 103px);
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.text-19 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-tapestry);
-  font-weight: normal;
-  font-size: 90px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-241-142-163);
+/* FOOTER */
+
+.poster-footer {
+    height: 10.5%;
+    flex-shrink: 0;
+    background-color: #91cbbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ed1745;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: clamp(20px, 4.5vw, 45px);
 }
 
-.text-20 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  text-align: left;
-  font-family: var(--font-family-tapestry);
-  font-weight: normal;
-  font-size: 212px;
-  line-height: 132px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-241-142-163);
-}
+/* MOBILE */
 
-.type-1 {
-@media (max-width: 1440px) {
-  .type-1 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
+@media (max-width: 500px) {
+    body {
+        padding: 5px;
+    }
 
-@media (max-width: 768px) {
-  .type-1 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(255, 255, 255, 1);
+    .poster {
+        border-width: 3px;
+    }
+
+    .poster-header {
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .dots {
+        border-top-width: 3px;
+    }
+
+    .vertical-title {
+        letter-spacing: -2px;
+    }
+
+    .hoho-pattern p {
+        letter-spacing: -1px;
+    }
+
+    .christmas {
+        letter-spacing: -3px;
+    }
+
+    .deck {
+        font-size: 9.5vw;
+    }
 }
