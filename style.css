@@ -189,17 +189,14 @@ body {
 /* CHRISTMAS */
 
 .christmas {
-    position: absolute;
-    top: 62%;
-    left: 39%;
-    width: 57%;
-    color: #f28ba8;
-    font-family: 'Bodoni Moda', serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: clamp(55px, 12vw, 135px);
-    line-height: .73;
-    letter-spacing: -7px;
+  color: #f18ea3;
+  text-align: left;
+  font-family: "Tapestry-Regular", sans-serif;
+  font-size: 212px;
+  line-height: 132px;
+  font-weight: 400;
+  position: relative;
+  height: 161px;
 }
 
 .christmas span {
