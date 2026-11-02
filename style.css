@@ -1,282 +1,292 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700;6..96,900&family=Playfair+Display:ital,wght@0,700;1,700;1,900&family=Rye&family=Special+Elite&display=swap');
-
-/* RESET */
+/* BASIC PAGE SETTINGS */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    min-height: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #202020;
-    display: block;
-    padding: 0;
     margin: 0;
+    background-color: #fffdf9;
+    color: #292929;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
 }
 
-/* POSTER */
 
-.poster {
-    width: 100%;
-    max-width: none;
-    aspect-ratio: 944 / 1132;
-    border: 4px solid #009eff;
-    background-color: #51977f;
+/* COLORS */
+
+:root {
+    --red: #b52c35;
+    --green: #526b4b;
+    --cream: #f5eee2;
+    --line: #dedbd5;
+}
+
+
+/* NAVIGATION */
+
+header {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 6%;
+}
+
+nav {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 0;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* HEADER */
-
-.poster-header {
-    height: 10.5%;
-    background-color: #91cbbf;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
-    padding: 0 10px;
-    flex-shrink: 0;
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
 }
 
-.poster-header h1 {
-    color: #ed1745;
-    font-family: 'Mountains of Christmas', cursive;
-    font-size: clamp(20px, 4.5vw, 65px);
-    font-weight: 400;
-    white-space: nowrap;
-    text-align: center;
+nav a:hover {
+    color: var(--red);
 }
 
-.dots {
-    flex: 1;
-    border-top: 6px dotted #ed1745;
-}
 
 /* MAIN CONTENT */
 
-.poster-content {
-    height: 79%;
-    position: relative;
-    background-color: #51977f;
-    overflow: hidden;
-    flex: 1;
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 6%;
 }
 
-/* VERTICAL TITLE */
-
-.vertical-title {
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    width: 18%;
-    height: 37%;
-    color: #064e3b;
-    font-family: 'Bodoni Moda', serif;
-    font-weight: 900;
-    font-size: clamp(25px, 5.5vw, 75px);
-    line-height: .85;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-align: center;
-    letter-spacing: -5px;
+section {
+    padding: 45px 0;
+    border-bottom: 1px solid var(--line);
 }
 
-/* HOHO PATTERN */
-
-.hoho-pattern {
-    position: absolute;
-    top: 3%;
-    left: 25%;
-    width: 72%;
-    color: #a1d6ca;
-    font-family: 'Bodoni Moda', serif;
-    font-weight: 400;
-    font-size: clamp(25px, 5.3vw, 68px);
-    line-height: 1.05;
-    white-space: nowrap;
-    overflow: hidden;
+.small-title {
+    color: var(--red);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.hoho-pattern p {
-    letter-spacing: -3px;
-    transform: scaleY(1.1);
-    transform-origin: left;
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+    color: #242424;
 }
 
-/* HAPPY HOLIDAYS */
-
-.happy-holidays {
-    position: absolute;
-    top: 44%;
-    left: 25%;
-    color: #f28ba8;
-    font-family: 'Bodoni Moda', serif;
-    font-size: clamp(30px, 7.2vw, 85px);
-    font-weight: 700;
-    white-space: nowrap;
-    letter-spacing: -3px;
-}
-
-/* HOLLY JOLLY */
-
-.holly {
-    position: absolute;
-    top: 52%;
-    left: 3%;
-    width: 34%;
-    color: #ed1745;
+h1,
+.holiday-design h2 {
     font-family: 'Mountains of Christmas', cursive;
-    font-size: clamp(25px, 4.4vw, 52px);
-    line-height: 1.05;
 }
 
-.holly span {
-    display: block;
-    font-size: 1.4em;
-}
-
-/* MERRY AND BRIGHT */
-
-.merry {
-    position: absolute;
-    top: 53%;
-    left: 38%;
-    color: #064e3b;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: clamp(25px, 5.2vw, 62px);
-    font-weight: 900;
-    white-space: nowrap;
-}
-
-.merry small {
-    font-size: .65em;
-}
-
-/* TWAS THE NIGHT BEFORE */
-
-.night {
-    position: absolute;
-    top: 63%;
-    left: 4%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: #f28ba8;
-    font-family: 'Bodoni Moda', serif;
-    font-size: clamp(25px, 5.5vw, 65px);
-    font-style: italic;
-    font-weight: 700;
+h1 {
+    font-size: clamp(60px, 10vw, 105px);
+    color: var(--red);
+    margin: 5px 0;
     line-height: 1.1;
 }
 
-.night span {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: .9em;
+section h2 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/* CHRISTMAS */
-
-.christmas {
-  color: #f18ea3;
-  text-align: left;
-  font-family: "Tapestry-Regular", sans-serif;
-  font-size: 212px;
-  line-height: 132px;
-  font-weight: 400;
-  position: relative;
-  height: 161px;
+h3 {
+    font-size: 18px;
 }
 
-.christmas span {
-    display: block;
+
+/* INTRODUCTION */
+
+.description {
+    max-width: 650px;
+    font-size: 17px;
+    margin-bottom: 30px;
 }
 
-/* OH WHAT FUN */
-
-.vertical-fun {
-    position: absolute;
-    right: 3%;
-    top: 57%;
-    color: #a1d6ca;
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(25px, 4.5vw, 52px);
-    font-weight: 900;
-    font-style: italic;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+figure {
+    margin: 30px 0;
 }
 
-/* DECK THE HALLS */
+figure img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
 
-.deck {
-    position: absolute;
-    left: 3%;
-    bottom: 2%;
-    width: 94%;
-    color: white;
-    font-family: 'Rye', serif;
-    font-size: clamp(40px, 10.5vw, 120px);
-    white-space: nowrap;
-    letter-spacing: 1px;
+figcaption,
+.caption {
+    color: #777;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+/* FACTS ROW */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-top: 30px;
+}
+
+.facts div {
+    padding: 15px;
+    border-right: 1px solid var(--line);
+}
+
+.facts div:last-child {
+    border-right: none;
+}
+
+.facts h3 {
+    color: var(--red);
+    font-size: 25px;
+    margin: 0;
+}
+
+.facts p {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* RESEARCH TEXT */
+
+section > p:not(.small-title) {
+    max-width: 850px;
+    font-size: 15px;
+}
+
+
+/* THREE EXAMPLES */
+
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.example {
+    border-top: 2px solid var(--red);
+    padding-top: 15px;
+}
+
+.example img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background-color: var(--cream);
+}
+
+.example h3 {
+    font-size: 19px;
+}
+
+.example p {
+    font-size: 13px;
+}
+
+.example a {
+    color: var(--red);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.example a:hover {
+    text-decoration: underline;
+}
+
+
+/* YOUR CHRISTMAS DESIGN */
+
+.holiday-design {
+    background-color: var(--cream);
+    border: 1px solid #e6d9c8;
+    padding: 50px 20px;
     text-align: center;
+    margin-top: 30px;
 }
+
+.demo-small,
+.demo-bottom {
+    color: var(--green);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.holiday-design h2 {
+    color: var(--red);
+    font-size: clamp(55px, 9vw, 90px);
+    line-height: 1.05;
+    margin: 25px 0;
+}
+
 
 /* FOOTER */
 
-.poster-footer {
-    height: 10.5%;
-    flex-shrink: 0;
-    background-color: #91cbbf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ed1745;
-    font-family: 'Mountains of Christmas', cursive;
-    font-size: clamp(25px, 4.5vw, 55px);
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
-/* MOBILE */
 
-@media (max-width: 500px) {
+/* KEYBOARD ACCESSIBILITY */
 
-    .poster {
-        border-width: 3px;
+a:focus-visible {
+    outline: 3px solid var(--green);
+    outline-offset: 4px;
+}
+
+
+/* MOBILE SCREEN */
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 25px 6%;
     }
 
-    .poster-header {
-        gap: 5px;
-        padding: 0 5px;
+    nav {
+        gap: 15px;
     }
 
-    .dots {
-        border-top-width: 3px;
+    .facts {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .vertical-title {
-        letter-spacing: -2px;
+    .facts div:nth-child(2) {
+        border-right: none;
     }
 
-    .hoho-pattern p {
-        letter-spacing: -1px;
+    .example-grid {
+        grid-template-columns: 1fr;
     }
 
-    .christmas {
-        letter-spacing: -3px;
+    figure img {
+        height: 240px;
     }
 
-    .deck {
-        font-size: 9.5vw;
+    section h2 {
+        font-size: 34px;
     }
+
 }
