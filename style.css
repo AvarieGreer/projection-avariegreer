@@ -7,19 +7,9 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #202020;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 15px;
-}
-
 .poster {
     width: min(100%, 914px);
     aspect-ratio: 944 / 1132;
-    border: 4px solid #009eff;
     background-color: #51977f;
     display: flex;
     flex-direction: column;
